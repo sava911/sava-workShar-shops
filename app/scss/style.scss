@@ -3,34 +3,208 @@
 @import "slick";
 @import "fonts";
 
-.header {}
+.header {
+    margin-bottom: 45px;
 
+    &__btn {
+        padding: 0 15px;
+    }
 
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        line-height: 28px;
+    }
 
-.header__top {
-    display: flex;
-    justify-content: space-between;
+    &__top--wrapper {
+        border-bottom: 1px solid #e3e3e3;
+        margin-bottom: 10px;
+    }
+
 }
 
-.header__top--map {}
 
-.maps {}
+.maps {
+    padding-left: 20px;
+    position: relative;
 
-.header__top--item {}
+    &::after {
+        font-family: 'icomoon' !important;
+        content: "\e947";
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #000;
+    }
+}
 
 .menu {
     display: flex;
     justify-content: space-between;
 }
+
 .menu__list+.menu__list {
     margin-left: 20px;
-} 
+}
 
-.menu__list {}
 
-.menu__link {}
 
-.header__btn {}
 
-.btn {}
+
+//end header top
+.header__main {}
+
+
+
+.header__main--inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    padding-top: 5px
+}
+
+.logo__link {}
+
+.header__info {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.header__info--item {
+    max-width: 150px;
+    ;
+    display: flex;
+
+}
+
+.header__info--img {}
+
+.sprite-car {
+    background-image: url(../images/sprite.png);
+    background-position: -181px -296px;
+    width: 51px;
+    height: 32px;
+}
+
+.header__info--text {
+    padding-left: 5px;
+}
+
+.sprite-users {
+    background-image: url(../images/sprite.png);
+    background-position: 0 -376px;
+    width: 35px;
+    height: 34px;
+}
+
+.sprite-like {
+    background-image: url(../images/sprite.png);
+    background-position: -65px -376px;
+    width: 34px;
+    height: 34px;
+}
+
+.phone {
+    margin-right: 15px;
+
+    &__number {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 3px;
+
+
+    }
+
+    &-icon {
+        position: relative;
+
+
+        &::after {
+            font-family: 'icomoon' !important;
+            content: "\e958";
+            position: absolute;
+            top: 0;
+            left: 2px;
+
+
+        }
+    }
+
+    &__link {
+        color: #03a9f4;
+        padding-right: 11px;
+        padding-left: 18px;
+
+    }
+
+
+}
+
+.mail-icon {
+    position: relative;
+
+    &::after {
+        font-family: 'icomoon' !important;
+        content: "\e945";
+        position: absolute;
+        top: 0;
+        left: 2px;
+
+
+    }
+}
+
+
+
+.header__bascket {
+    border: 1px solid #ccc;
+    width: 145px;
+    height: 50px;
+    display: flex;
+    color: #03a9f4;
+
+}
+
+.bascket__logo {
+    border-right: 1px solid #ccc;
+    width: 50px;
+    height: 50px;
+    position: relative;
+
+    &::after {
+        font-family: 'icomoon' !important;
+        content: "\e93a";
+        position: absolute;
+        top: 15px;
+        left: 12px;
+        font-size: 22px;
+
+    }
+}
+
+.bascket__resault {
+    padding: 10px;
+}
+
+.bascket__volume {
+   
+}
+
+.bascket__volume--number,
+.bascket__quantity--number {
+    color: #000;
+}
+
+.bascket__quantity {}
+
+.bascket__quantity--number {}
+
+//end header main
+//end header top
+
+
+
 @import "media";
