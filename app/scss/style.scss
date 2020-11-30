@@ -52,20 +52,19 @@
 
 
 //end header top
-.header__main {}
 
 
 
 .header__main--inner {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 .logo {
     padding-top: 5px
 }
 
-.logo__link {}
 
 .header__info {
     display: flex;
@@ -75,12 +74,11 @@
 
 .header__info--item {
     max-width: 150px;
-    ;
+
     display: flex;
 
 }
 
-.header__info--img {}
 
 .sprite-car {
     background-image: url(../images/sprite.png);
@@ -174,6 +172,20 @@
     height: 50px;
     position: relative;
 
+
+    border-radius: 4px;
+    transition: all 0.3s;
+
+
+
+    &:hover,
+    &:focus {
+        transition: all 0.3s;
+        color: #fff;
+        background-color: #03a9f4;
+
+    }
+
     &::after {
         font-family: 'icomoon' !important;
         content: "\e93a";
@@ -189,22 +201,114 @@
     padding: 10px;
 }
 
-.bascket__volume {
-   
-}
+
 
 .bascket__volume--number,
 .bascket__quantity--number {
     color: #000;
 }
 
-.bascket__quantity {}
 
-.bascket__quantity--number {}
 
 //end header main
-//end header top
 
 
+
+.navigation__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation__menu--btn {
+    background-color: #DA1D23;
+    padding: 0 25px;
+    width: 200px;
+    text-align: left;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+
+    &::after {
+        font-family: 'icomoon' !important;
+        content: "\e9bd";
+        position: absolute;
+        top: 9px;
+        right: 12px;
+
+        font-size: 20px;
+
+    }
+}
+
+.navigation__searh {
+    border: 1px solid #ccc;
+}
+
+
+
+.navigation__whatsapp {
+    font-size: 18px;
+    line-height: 41px;
+    padding-left: 53px;
+    padding-right: 10px;
+    position: relative;
+    font-weight: 500;
+
+
+    &::after {
+        font-family: 'icomoon' !important;
+        content: "\ea93";
+        position: absolute;
+        top: 0;
+        left: 9px;
+        font-size: 26px;
+
+    }
+}
+
+
+.searc__content-form {
+    display: flex;
+}
+
+.searc__content-input {
+
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 5px 20px;
+    border: none;
+    font-size: 16px;
+    line-height: 30px;
+    width: 770px;
+    outline: none;
+
+    &::placeholder {
+        color: #656464;
+
+    }
+}
+
+.searc__content-btn {
+
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    position: relative;
+
+
+    &::after {
+        font-family: 'icomoon' !important;
+        content: "\e986";
+        position: absolute;
+
+        top: 13px;
+        left: 3px;
+
+        font-size: 16px;
+
+    }
+}
+
+//end header button
 
 @import "media";

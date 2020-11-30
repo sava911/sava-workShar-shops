@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>look shar</title>
-
+  <link rel="shortcut icon" href="images/favicon.png" type="image/png">
   <link rel="stylesheet" href="css/font-style.css">
   <link rel="stylesheet" href="css/slick.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap"
@@ -16,7 +16,7 @@
 
 <body>
   <header class="header">
-    <div class="header__top--wrapper">
+    <section class="header__top--wrapper">
       <div class="container">
         <div class="header__top">
 
@@ -39,9 +39,9 @@
 
         </div>
       </div>
-      <!-- end header-top-->
-    </div>
-    <div class="header__main">
+    </section>
+    <!-- end header-top-->
+    <section class="header__main">
       <div class="container">
         <div class="header__main--inner">
           <div class="logo">
@@ -77,8 +77,27 @@
           </div>
         </div>
       </div>
-    </div>
-  </header><!-- end header-top-->
+    </section><!-- end header-main-->
+    <section class="header__bottom navigation">
+      <div class="container">
+        <div class="navigation__inner">
+          <button class="navigation__menu--btn">button click</button>
+          <div class="navigation__searh">
+
+            <form class="searc__content-form" action="">
+              <input class="searc__content-input" type="text" placeholder="Введите номер" />
+              <button class="searc__content-btn" type="submit"></button>
+            </form>
+
+          </div>
+          <a class="navigation__whatsapp btn">Whatsapp</a>
+        </div>
+      </div>
+    </section><!-- end header-bottom-->
+  </header>
+  <main class="main">
+
+  </main>
   <script src="js/slick.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
