@@ -1,0 +1,61 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  // пример
+  // font-family: "Fira Sans", sans-serif;
+  // font-weight: 400;
+  // font-size: 16px;
+  background-color: #171919;
+  // color: #fff;
+  // text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+p {
+  margin: 0;
+}
+
+
+.container {
+  padding: 0 15px;
+  max-width: 1230px;
+  margin: 0 auto;
+}
