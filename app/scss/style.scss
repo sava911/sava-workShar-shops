@@ -363,6 +363,7 @@
     cursor: pointer;
     border: 1px solid #ccc;
     transition: all 0.3s;
+    background-color: #fff;
 
 
     &:hover,
@@ -447,5 +448,59 @@
 }
 
 // end products block
+.features,
+.content {
+    margin-bottom: 25px;
+}
+
+.features__items {
+    display: flex;
+    justify-content: space-between;
+
+
+
+
+}
+
+.features__item+.features__item {
+    margin-left: 20px;
+}
+
+.features__item,
+.content {
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+
+
+
+}
+
+.features__item--title,
+.content__title {
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.features__item--text,
+.content__text {
+    margin-bottom: 25px;
+    font-size: 18px;
+    letter-spacing: 0.3px;
+}
+
+.features__item--link {
+
+    font-size: 18px;
+    color: #03a9f4;
+}
+
+// end features block
+
+
+
+
+// end .content block
+
 
 @import "media";
