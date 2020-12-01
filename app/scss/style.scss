@@ -318,7 +318,9 @@
 }
 
 .banner {
-    &-section__inner {}
+    &-section__inner {
+        margin-bottom: 10px;
+    }
 
 
 
@@ -364,7 +366,11 @@
     border: 1px solid #ccc;
     transition: all 0.3s;
     background-color: #fff;
+    border-bottom: none;
 
+    &:last-child {
+        border-bottom: 1px solid #ccc;
+    }
 
     &:hover,
     &:focus {
@@ -417,9 +423,9 @@
     &__item {
         background-color: #fff;
         margin: 5px 0;
-        transition: all 0.3s;
-        padding: 10px;
         text-align: center;
+        padding: 10px;
+        transition: all 0.3s;
 
         &:hover,
         &:focus {
@@ -449,16 +455,14 @@
 
 // end products block
 .features,
-.content {
+.content,
+.forms {
     margin-bottom: 25px;
 }
 
 .features__items {
     display: flex;
     justify-content: space-between;
-
-
-
 
 }
 
@@ -467,23 +471,33 @@
 }
 
 .features__item,
-.content {
+.content,
+.forms {
     padding: 20px;
     border: 1px solid #ccc;
     background-color: #fff;
+    transition: all 0.3s;
+
+    &:hover,
+    &:focus {
+        border-color: #F5BFBA;
+        -webkit-box-shadow: 0px 2px 10px 0px rgba(33, 33, 33, 0.2);
+        -moz-box-shadow: 0px 2px 10px 0px rgba(33, 33, 33, 0.2);
+        box-shadow: 0px 2px 10px 0px rgba(33, 33, 33, 0.2);
+        z-index: 3;
+        transition: all 0.3s;
+    }
 
 
 
 }
 
-.features__item--title,
-.content__title {
+.title {
     margin-bottom: 25px;
     font-size: 28px;
 }
 
-.features__item--text,
-.content__text {
+.text {
     margin-bottom: 25px;
     font-size: 18px;
     letter-spacing: 0.3px;
@@ -497,10 +511,11 @@
 
 // end features block
 
-
-
-
 // end .content block
-
+/*   background-color: #DA1D23;
+    padding: 0 25px;
+    width: 200px;
+    text-align: left;
+    color: #fff; */
 
 @import "media";
