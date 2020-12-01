@@ -253,6 +253,7 @@
     padding-right: 10px;
     position: relative;
     font-weight: 500;
+    cursor: pointer;
 
 
     &::after {
@@ -317,16 +318,9 @@
 }
 
 .banner {
-    // &-section__inner {
-    //     display: flex;
-    //     justify-content: space-between;
-    //     padding-top: 190px;
-    //     margin-bottom: 25px;
-    // }
+    &-section__inner {}
 
-    &-section__slider {
-        max-width: 100%;
-    }
+
 
     &-arrow {
         position: absolute;
@@ -350,6 +344,44 @@
     }
 
 
+}
+
+
+.left {
+    width: 200px;
+
+    margin-top: 14px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.nav__list {
+    padding: 10px 20px;
+    position: relative;
+    cursor: pointer;
+
+    &::after {
+        font-family: 'icomoon' !important;
+        content: "\ea50";
+        position: absolute;
+        transform: rotate(90deg);
+        top: 13px;
+        right: 10px;
+        font-weight: 400;
+        font-size: 14px;
+
+
+
+
+    }
+}
+
+
+.right {
+    width: 1000px;
+    padding-left: 20px;
 }
 
 
