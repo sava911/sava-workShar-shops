@@ -23,6 +23,20 @@
 
 }
 
+.time {
+    padding-left: 20px;
+    position: relative;
+    margin-top: 20px;
+
+    &::after {
+        font-family: 'icomoon' !important;
+        content: "\e952";
+        position: absolute;
+        top: 0;
+        left: 0;
+
+    }
+}
 
 .maps {
     padding-left: 20px;
@@ -34,7 +48,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        color: #000;
+
     }
 }
 
@@ -61,7 +75,7 @@
     margin-bottom: 10px;
 }
 
-.logo {
+.header__logo {
     padding-top: 5px
 }
 
@@ -567,10 +581,105 @@
 }
 
 // end .form block
-/*   background-color: #DA1D23;
-    padding: 0 25px;
-    width: 200px;
-    text-align: left;
-    color: #fff; */
+.footer__top-newslatter.footer__top-item {
+    width: 295px;
+    margin-right: 50px;
+}
+
+
+.footer {
+    background: #28302E;
+    color: #fff;
+
+    &__bottom {
+        padding: 46px 0 22px;
+
+
+    }
+
+    &__btn {
+        padding: 10px 25px;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        font-size: 16px;
+        border: 1px solid #fff;
+    }
+
+    &__bottom-copy {
+        font-size: 10px;
+        line-height: 12px;
+
+        margin-bottom: 5px;
+
+        &:last-child {
+            margin-top: 20px;
+        }
+    }
+
+    &__top-title {
+        font-weight: 700;
+
+        font-size: 14px;
+        line-height: 16px;
+        color: #faa72b;
+    }
+
+    &__top {
+        padding-top: 43px;
+    }
+
+    &__top-inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+
+
+
+
+
+    &__top-item {
+        width: 250px;
+    }
+
+    &-list {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    &__number {
+        font-size: 22px;
+    }
+
+    &__mail {
+        display: block;
+        text-decoration: underline;
+        margin-bottom: 25px;
+    }
+
+
+}
+
+.footer__top--list {
+    margin-bottom: 10px;
+}
+
+
+.social-lists {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 33px;
+
+
+}
+
+.social-list {}
+
+
+// end .footer block
+
 
 @import "media";
