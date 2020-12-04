@@ -4,7 +4,7 @@
 @import "fonts";
 
 .header {
-    margin-bottom: 45px;
+    margin-bottom: 20px;
 
     &__btn {
         padding: 0 15px;
@@ -265,12 +265,22 @@
         font-size: 26px;
 
     }
+
+    &:hover,
+    &:focus {
+        transition: all 0.3s;
+        color: #fff;
+        background-color: #03f473;
+
+    }
 }
 
 
 .searc__content-form {
     display: flex;
 }
+
+
 
 .searc__content-input {
 
@@ -493,25 +503,70 @@
 }
 
 .title {
-    margin-bottom: 25px;
-    font-size: 28px;
+    margin-bottom: 10px;
+    font-size: 16px;
 }
 
 .text {
-    margin-bottom: 25px;
-    font-size: 18px;
+    margin-bottom: 10px;
+    // font-size: 18px;
     letter-spacing: 0.3px;
 }
 
 .features__item--link {
 
-    font-size: 18px;
+    // font-size: 18px;
     color: #03a9f4;
 }
 
 // end features block
 
 // end .content block
+.forms {
+    margin-bottom: 25px;
+}
+
+.form__title {}
+
+.title {}
+
+.form__text {}
+
+.text {}
+
+.form__inner {}
+
+.form__content-form {
+    display: flex;
+}
+
+.form__input {
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 5px 20px;
+    // border: none;
+    font-size: 16px;
+    line-height: 30px;
+    width: 100%;
+    outline: none;
+    margin-right: 25px;
+
+    &::placeholder {
+        color: #656464;
+
+    }
+}
+
+.form__btn {
+    background-color: #DA1D23;
+    padding: 0 25px;
+    width: 400px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+}
+
+// end .form block
 /*   background-color: #DA1D23;
     padding: 0 25px;
     width: 200px;
