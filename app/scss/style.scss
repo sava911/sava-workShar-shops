@@ -268,6 +268,8 @@
     position: relative;
     font-weight: 500;
     cursor: pointer;
+    color: #fff;
+    background-color: #03f473;
 
 
     &::after {
@@ -283,8 +285,9 @@
     &:hover,
     &:focus {
         transition: all 0.3s;
-        color: #fff;
-        background-color: #03f473;
+        background-color: #fff;
+        color: #000;
+
 
     }
 }
@@ -446,7 +449,7 @@
 
     &__item {
         background-color: #fff;
-        margin: 5px 0;
+        margin: 2px 0;
         text-align: center;
         padding: 10px;
         transition: all 0.3s;
@@ -604,6 +607,15 @@
         color: #fff;
         font-size: 16px;
         border: 1px solid #fff;
+        transition: all 0.3s;
+
+        &:hover,
+        &:focus {
+            transition: all 0.3s;
+            color: #000;
+            background-color: #fff;
+
+        }
     }
 
     &__bottom-copy {
@@ -671,12 +683,84 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 33px;
+    margin-bottom: 31px;
 
 
 }
 
+.social-link {
+    position: relative;
+    font-weight: 400;
+    font-size: 15px;
+    transition: all 0.3s;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    padding: 15px;
+
+
+    &:hover,
+    &:focus {
+        transition: all 0.3s;
+        color: #000;
+        background-color: #fff;
+
+    }
+}
+
+.social-link {}
+
+.link-inst {
+    &::after {
+        font-family: 'icomoon' !important;
+        content: "\ea92";
+        position: absolute;
+
+        top: 8px;
+        left: 8px;
+
+
+    }
+}
+
 .social-list {}
+
+.link-fb {
+    &::after {
+        font-family: 'icomoon' !important;
+        content: "\ea90";
+        position: absolute;
+
+        top: 8px;
+        left: 8px;
+
+
+    }
+}
+
+.link-vk {
+    &::after {
+        font-family: 'icomoon' !important;
+        content: "\ea98";
+        position: absolute;
+        top: 8px;
+        left: 8px;
+
+
+    }
+}
+
+.link-youtube {
+    &::after {
+        font-family: 'icomoon' !important;
+
+        position: absolute;
+        content: "\ea90";
+        top: 8px;
+        left: 8px;
+
+
+    }
+}
 
 
 // end .footer block
