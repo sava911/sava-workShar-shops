@@ -502,6 +502,8 @@
 
 .features__item,
 .delivery__item,
+.pay__peples,
+.pay__companys,
 .contact__item,
 .contact__info,
 .content,
@@ -1128,6 +1130,70 @@
 }
 
 // end company__info block
+.pay__peples {
+    margin-bottom: 20px;
+}
+
+.pay__peples--tile {
+    line-height: 1em;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+
+.pay__items {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.pay__item {
+    max-width: 350px;
+    margin-bottom: 20px;
+    padding: 5px;
+    margin-right: 20px;
+}
+
+
+.pay__item--img {}
+
+.pay__item--img__cart {}
+
+.pay__item--inner {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.pay__item--title {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.pay__item--subtitle {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.pay__item--subtext {}
+
+.pay__item--text {}
+
+.pay__item--img {
+    width: 60px;
+    height: 60px;
+    margin-right: 25px;
+}
+
+.pay__companys {
+    margin-bottom: 20px;
+}
+
+// end pay block
 
 
 @import "media";
