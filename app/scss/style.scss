@@ -501,6 +501,7 @@
 }
 
 .features__item,
+.delivery__item,
 .contact__item,
 .contact__info,
 .content,
@@ -770,7 +771,8 @@
 
 
 // end .footer block
-.contact__title {
+.contact__title,
+.delivery__title {
     font-weight: 500;
     margin-bottom: 20px;
     font-size: 36px;
@@ -877,6 +879,128 @@
 }
 
 // end contact info block
+
+
+
+.delivery {}
+
+.delivery__items {}
+
+.delivery__item {
+    margin-bottom: 20px;
+    padding: 0;
+    position: relative;
+}
+
+.delivery__item--car {
+    &::after {
+
+        content: '';
+        position: absolute;
+        background-image: url(../images/sprite.png);
+        background-position: -181px -296px;
+        width: 51px;
+        height: 32px;
+        top: 10px;
+        left: 20px;
+
+    }
+
+    .delivery__item--list {
+        border-bottom: 1px solid #ccc;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+
+        &:last-child {
+            border: none;
+        }
+    }
+
+}
+
+.delivery__item--inner {
+    border-bottom: 1px solid #ccc;
+    padding: 15px 20px 15px 100px;
+    display: flex;
+    justify-content: space-between;
+
+    .delivery__item--sale {
+        display: block;
+    }
+}
+
+
+
+.delivery__item--sale {
+    display: block;
+}
+
+.delivery__item--lists {}
+
+
+
+.delivery__item--user {
+    .delivery__item--title {
+        border-bottom: 1px solid #ccc;
+        padding: 25px 20px 25px 100px;
+    }
+
+    .delivery__item--list {
+        padding: 10px 20px;
+    }
+
+    &::after {
+
+        content: '';
+        position: absolute;
+        background-image: url(../images/sprite.png);
+        background-position: -417px -163px;
+        width: 35px;
+        height: 58px;
+        top: 10px;
+        left: 20px;
+
+    }
+}
+
+.delivery__item--basket {
+
+
+    .delivery__item--title {
+        border-bottom: 1px solid #ccc;
+        padding: 15px 20px 15px 100px;
+    }
+
+    .delivery__item--lists {
+        padding: 5px 0 10px 60px;
+
+    }
+
+    .delivery__item--list {
+
+        list-style: outside;
+    }
+
+    &::after {
+
+        content: '';
+        position: absolute;
+        background-image: url(../images/sprite.png);
+        background-position: -495px -252px;
+        width: 29px;
+        height: 35px;
+        top: 10px;
+        left: 20px;
+
+    }
+}
+
+.delivery__item--text {
+    padding: 10px 0 0 20px;
+}
+
+// end delivery block
 
 
 @import "media";
