@@ -771,8 +771,7 @@
 
 
 // end .footer block
-.contact__title,
-.delivery__title {
+.title-page {
     font-weight: 500;
     margin-bottom: 20px;
     font-size: 36px;
@@ -1001,6 +1000,134 @@
 }
 
 // end delivery block
+.company__banner {
+    background-repeat: no-repeat;
+    height: 408px;
+    margin-bottom: 20px;
+    background-image: url(../images/content/company-banner.jpg);
+
+    transition: all 0.3s;
+
+
+    &:hover,
+    &:focus {
+        border-color: #F5BFBA;
+        -webkit-box-shadow: 0px 2px 10px 0px rgba(33, 33, 33, 0.2);
+        -moz-box-shadow: 0px 2px 10px 0px rgba(33, 33, 33, 0.2);
+        box-shadow: 0px 2px 10px 0px rgba(33, 33, 33, 0.2);
+        z-index: 3;
+        transition: all 0.3s;
+    }
+}
+
+.company__banner--inner {}
+
+.company__banner--tile {
+    padding: 32px 32px 0;
+    max-width: 700px;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    margin-bottom: 120px;
+}
+
+.company__banner--items {
+    display: flex;
+    margin-left: 32px;
+
+}
+
+.company__banner--item {
+    display: flex;
+    // width: 25%;
+}
+
+.company__banner--img {
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.sprite-car {}
+
+.company__banner--item__inner {
+    width: 190px;
+}
+
+.company__banner--item__title {
+    font-size: 30px;
+}
+
+.company__block--text {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 400;
+
+    text-align: center;
+
+    display: block;
+}
+
+
+// end company__banner block
+.company__info {
+    margin-bottom: 20px;
+}
+
+.company__info--items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.company__info--item {
+    background-color: #f5f3f4;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 600px;
+    width: 390px;
+    padding: 10px 20px;
+
+
+    transition: all 0.3s;
+
+
+    &:hover,
+    &:focus {
+        border-color: #F5BFBA;
+        -webkit-box-shadow: 0px 2px 10px 0px rgba(33, 33, 33, 0.2);
+        -moz-box-shadow: 0px 2px 10px 0px rgba(33, 33, 33, 0.2);
+        box-shadow: 0px 2px 10px 0px rgba(33, 33, 33, 0.2);
+        z-index: 3;
+        transition: all 0.3s;
+    }
+}
+
+.company__info--product {
+    background-repeat: no-repeat;
+    background-image: url(../images/content/company-product.jpg);
+}
+
+.company__info--item__title {
+    margin-top: 350px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.company__info--item__text {
+    margin-bottom: 20px;
+}
+
+.company__info--user {
+    background-repeat: no-repeat;
+    background-image: url(../images/content/company-users.jpg);
+}
+
+.company__info--cart {
+    background-repeat: no-repeat;
+    background-image: url(../images/content/company-cart.jpg);
+}
+
+// end company__info block
 
 
 @import "media";
