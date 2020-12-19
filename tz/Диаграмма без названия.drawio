@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-12-19T12:50:24.904Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="9sEnHtlzo1BZQh_GZqfk" version="14.1.1" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-19T12:55:35.171Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="dSP5jRJHRvgwBzDbkvMa" version="14.1.1" type="github">
   <diagram name="Page-1" id="2c0d36ab-eaac-3732-788b-9136903baeff">
     <mxGraphModel dx="3426.5" dy="2219.5" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
       <root>
@@ -97,13 +97,13 @@
         <mxCell id="wiqVJxVSX-zZPtndjPT4-159" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=30;" edge="1" parent="1" source="wiqVJxVSX-zZPtndjPT4-157" target="wiqVJxVSX-zZPtndjPT4-158">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="wiqVJxVSX-zZPtndjPT4-157" value="&lt;ol style=&quot;font-size: 15px&quot;&gt;&lt;li&gt;МОНТАЖ&amp;nbsp;&lt;/li&gt;&lt;/ol&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;strokeColor=#C73500;fillColor=#fa6800;fontSize=30;fontColor=#ffffff;align=left;" vertex="1" parent="1">
+        <mxCell id="wiqVJxVSX-zZPtndjPT4-157" value="&lt;ol style=&quot;font-size: 15px&quot;&gt;&lt;li&gt;СЬМКО ВИДЕО И ФОТО&lt;/li&gt;&lt;li&gt;МОНТАЖ&amp;nbsp;&lt;/li&gt;&lt;li&gt;НАПИСАНИЕ СЦЕНАРИЕВ&lt;/li&gt;&lt;/ol&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;strokeColor=#C73500;fillColor=#fa6800;fontSize=30;fontColor=#ffffff;align=left;" vertex="1" parent="1">
           <mxGeometry x="2030" y="70" width="410" height="200" as="geometry" />
         </mxCell>
         <mxCell id="wiqVJxVSX-zZPtndjPT4-161" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=30;" edge="1" parent="1" source="wiqVJxVSX-zZPtndjPT4-158" target="wiqVJxVSX-zZPtndjPT4-160">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="wiqVJxVSX-zZPtndjPT4-158" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;strokeColor=#3A5431;fillColor=#6d8764;fontSize=30;fontColor=#ffffff;" vertex="1" parent="1">
+        <mxCell id="wiqVJxVSX-zZPtndjPT4-158" value="&lt;ol style=&quot;font-size: 15px&quot;&gt;&lt;li&gt;ГОЛОС&lt;/li&gt;&lt;li&gt;РЕЧЬ&amp;nbsp;&lt;/li&gt;&lt;li&gt;ОБРАЗ&lt;/li&gt;&lt;li&gt;ТЕЛО&lt;/li&gt;&lt;/ol&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;strokeColor=#3A5431;fillColor=#6d8764;fontSize=30;fontColor=#ffffff;align=left;" vertex="1" parent="1">
           <mxGeometry x="2030" y="350" width="410" height="200" as="geometry" />
         </mxCell>
         <mxCell id="wiqVJxVSX-zZPtndjPT4-163" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=30;" edge="1" parent="1" source="wiqVJxVSX-zZPtndjPT4-160" target="wiqVJxVSX-zZPtndjPT4-162">
