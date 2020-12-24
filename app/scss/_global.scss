@@ -8,6 +8,10 @@ html {
   box-sizing: inherit;
 }
 
+*:hover {
+  transition: all 0.3s;
+}
+
 body {
   font-family: 'Roboto',
     sans-serif;

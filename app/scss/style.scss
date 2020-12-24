@@ -1278,6 +1278,7 @@
     margin-bottom: 20px;
 
 
+
     &:hover,
     &:focus {
         border-color: #F5BFBA;
@@ -1297,35 +1298,105 @@
 
 .bascket__item--info__img {}
 
-.bascket__item--info__box {}
+.bascket__item--info__box {
+    margin-left: 20px;
+}
 
-.bascket__item--info__title {}
+.bascket__item--info__title {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
 
 .bascket__item--info__subtitle {}
 
 .bascket__item--buttons {
     display: flex;
 
+}
+
+.bascket__item--buttons__box {
+    margin-right: 25px;
+    display: flex;
+    height: 25px;
+}
+
+.bascket__item--buttons__btn {
+    border: 1px solid #333;
+    width: 15px;
+    display: block;
 
 }
 
-.bascket__item--buttons__box {}
+.bascket__item--buttons__input {
+    width: 100px;
+    text-align: center;
+}
 
-.bascket__item--buttons__btn {}
+.buttons__btn--minus {
+    border-right: none;
+}
 
-.buttons__btn--minus {}
+.buttons__btn--plas {
+    border-left: none;
+}
 
-.buttons__btn--plas {}
+.bascket__item--buttons__resault {
+    margin-right: 25px;
+    padding-top: 5px;
+}
 
-.bascket__item--buttons__resault {}
+.bascket__item--buttons__dalate--close {
+    position: absolute;
+    right: 15px;
+    top: -1px;
+    width: 10px;
+    height: 10px;
 
-.bascket__item--buttons__dalate--inner {}
+}
+
+
+
+.bascket__item--buttons__dalate--close:before,
+.bascket__item--buttons__dalate--close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 10px;
+    width: 2px;
+    background-color: red;
+}
+
+.bascket__item--buttons__dalate--close:before {
+    transform: rotate(45deg);
+}
+
+.bascket__item--buttons__dalate--close:after {
+    transform: rotate(-45deg);
+}
+
+.bascket__item--buttons__dalate--inner {
+    border: 1px solid red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-top: 3px;
+    position: relative;
+    opacity: 0.5;
+    transition: all 0.3s;
+
+    &:hover {
+        opacity: 1;
+    }
+
+}
+
 
 .bascket__item--buttons__dalate {}
 
+
 .bascket__form {
-    width: 340px;
-    height: 375px;
+    width: 320px;
+
     padding: 20px;
     background-color: #f8f8f8;
     border: 1px solid #ccc;
@@ -1343,11 +1414,73 @@
     }
 }
 
-.bascket__form--box {}
+.bascket__form--box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
 
 .bascket__form--name {}
 
-.bascket__form--sale {}
+.bascket__form--sale {
+    display: block;
+
+}
+
+.bascket__form--title {}
+
+.bascket__form--wrapper {
+    padding-top: 5px;
+    margin-bottom: 20px;
+    display: flex;
+
+    height: 35px;
+}
+
+.bascket__form--input {
+    width: 250px;
+}
+
+.bascket__form--btn__input {
+    border: 1px solid #000;
+    border-left: none;
+    display: block;
+    padding: 5px;
+}
+
+.bascket__form--buttons {
+    display: block;
+    text-align: center;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.bascket__form--buttons__checkout {
+    background-color: rgb(55, 171, 238);
+    color: #fff;
+    transition: all 0.3s;
+
+    &:hover,
+    &:focus {
+        background-color: red;
+
+    }
+
+}
+
+.bascket__form--buttons__next {
+
+    &:hover,
+    &:focus {
+        background-color: red;
+        background-color: #ccc;
+
+    }
+}
 
 // end bascket block
 
