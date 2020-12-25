@@ -95,6 +95,187 @@
     </header>
     <main class="main">
         <div class="container">
+            <h3 class="checkout__title title-page">Оформление заказа</h3>
+            <div class="checkout__inner">
+                <div class="checkout__items">
+                    <div class="checkout__item">
+                        <div class="checkout__item--title__wrapper">
+                            <h6 class="checkout__item--title">Контакты</h6>
+                        </div>
+                        <div class="checkout__item--inner">
+                            <div class="checkout__item--wrapper">
+                                <div class="checkout__item--box">
+                                    <b class="checkout__item--text">Ваше имя</b>
+                                    <input class="checkout__item--input" type="text">
+                                </div>
+                                <div class="checkout__item--box">
+                                    <b class="checkout__item--text">Ваш телефон</b>
+                                    <input class="checkout__item--input" placeholder="x(xxx)xxx-xx-xx" type="text">
+                                </div>
+                            </div>
+                            <div class="checkout__item--sale">
+                                <h6 class="checkout__item--sale__title">ЗАРЕГИСТРИРОВАТЬСЯ В ПРОЦЕССЕ ЗАКАЗА?</h6>
+                                <span class="checkout__item--sale__text">СКИДКА 3%!</span>
+                                <input type="radio" class="checkout__item--sale__input" />
+                                <span>Да</span>
+                                <input type="radio" class="checkout__item--sale__input" />
+                                <span>Нет</span>
+                            </div>
+                            <div class="checkout__item--buttons__radio">
+                                <div class="checkout__item--buttons__radio--box">
+                                    <button class="checkout__item--buttons__radio--btn"></button>
+                                    <span class="checkout__item--buttons__radio--text">Получать будет другой
+                                        человек</span>
+                                </div>
+                                <div class="checkout__item--buttons__radio--box">
+                                    <button class="checkout__item--buttons__radio--btn"></button>
+                                    <span class="checkout__item--buttons__radio--text">Анонимный заказ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkout__item">
+                        <div class="checkout__item--title__wrapper">
+
+                            <h6 class="checkout__item--title">Доставка</h6>
+                        </div>
+                        <div class="checkout__item--inner">
+                            <div class="checkout__item--dalivery--radio">
+                                <input type="radio" class="checkout__item--dalivery--radio__input" />
+                                <span class="checkout__item--dalivery--radio__text">Курьер</span>
+                                <span class="checkout__item--dalivery--radio__subtext">(450р.)</span>
+                                <input type="radio" class="checkout__item--dalivery--radio__input" />
+                                <span class="checkout__item--dalivery--radio__text">Самовывоз </span>
+                                <span class="checkout__item--dalivery--radio__subtext">(скидка 5%)</span>
+                            </div>
+                            <b class="checkout__item--dalivery__title">Выберите дату и желаемое время доставки. Условия
+                                доставки подтверждаются оператором.</b>
+                            <input id="date-j" name="date" class="form-control" value="25-12-2020">
+                            <select name="time" class="form-control">
+                                <option value="00:00">00:00</option>
+                                <option value="00:15">00:15</option>
+                                <option value="00:30">00:30</option>
+                                <option value="00:45">00:45</option>
+                                <option value="01:00">01:00</option>
+                                <option value="01:15">01:15</option>
+                                <option value="01:30">01:30</option>
+                                <option value="01:45">01:45</option>
+                                <option value="02:00">02:00</option>
+                                <option value="02:15">02:15</option>
+                                <option value="02:30">02:30</option>
+                                <option value="02:45">02:45</option>
+                                <option value="03:00">03:00</option>
+                                <option value="03:15">03:15</option>
+                                <option value="03:30">03:30</option>
+                                <option value="03:45">03:45</option>
+                                <option value="04:00">04:00</option>
+                                <option value="04:15">04:15</option>
+                                <option value="04:30">04:30</option>
+                                <option value="04:45">04:45</option>
+                                <option value="05:00">05:00</option>
+                                <option value="05:15">05:15</option>
+                                <option value="05:30">05:30</option>
+                                <option value="05:45">05:45</option>
+                                <option value="06:00">06:00</option>
+                                <option value="06:15">06:15</option>
+                                <option value="06:30">06:30</option>
+                                <option value="06:45">06:45</option>
+                                <option value="07:00">07:00</option>
+                                <option value="07:15">07:15</option>
+                                <option value="07:30">07:30</option>
+                                <option value="07:45">07:45</option>
+                                <option value="08:00">08:00</option>
+                                <option value="08:15">08:15</option>
+                                <option value="08:30">08:30</option>
+                                <option value="08:45">08:45</option>
+                                <option value="09:00">09:00</option>
+                                <option value="09:15">09:15</option>
+                                <option value="09:30">09:30</option>
+                                <option value="09:45">09:45</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:15">10:15</option>
+                                <option value="10:30">10:30</option>
+                                <option value="10:45">10:45</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:15">11:15</option>
+                                <option value="11:30">11:30</option>
+                                <option value="11:45">11:45</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:15">12:15</option>
+                                <option value="12:30">12:30</option>
+                                <option value="12:45">12:45</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:15">13:15</option>
+                                <option value="13:30">13:30</option>
+                                <option value="13:45">13:45</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:15">14:15</option>
+                                <option value="14:30">14:30</option>
+                                <option value="14:45">14:45</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:15">15:15</option>
+                                <option value="15:30">15:30</option>
+                                <option value="15:45">15:45</option>
+                                <option value="16:00" selected="selected">16:00</option>
+                                <option value="16:15">16:15</option>
+                                <option value="16:30">16:30</option>
+                                <option value="16:45">16:45</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:15">17:15</option>
+                                <option value="17:30">17:30</option>
+                                <option value="17:45">17:45</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:15">18:15</option>
+                                <option value="18:30">18:30</option>
+                                <option value="18:45">18:45</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:15">19:15</option>
+                                <option value="19:30">19:30</option>
+                                <option value="19:45">19:45</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:15">20:15</option>
+                                <option value="20:30">20:30</option>
+                                <option value="20:45">20:45</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:15">21:15</option>
+                                <option value="21:30">21:30</option>
+                                <option value="21:45">21:45</option>
+                                <option value="22:00">22:00</option>
+                                <option value="22:15">22:15</option>
+                                <option value="22:30">22:30</option>
+                                <option value="22:45">22:45</option>
+                                <option value="23:00">23:00</option>
+                                <option value="23:15">23:15</option>
+                                <option value="23:30">23:30</option>
+                                <option value="23:45">23:45</option>
+                            </select>
+                            <b class="checkout__item--dalivery__title">Адрес доставки</b>
+                            <b class="checkout__item--dalivery__title">Дополнительная информация</b>
+                        </div>
+                    </div>
+                    <div class="checkout__item">
+                        <div class="checkout__item--title__wrapper">
+
+                            <h6 class="checkout__item--title">Оплата</h6>
+                        </div>
+                        <div class="checkout__item--inner"></div>
+                    </div>
+                </div>
+                <div class="bascket__form">
+                    <div class="bascket__form--box">
+                        <b class="bascket__form--name">Корзина</b>
+                        <span class="bascket__form--sale">1999р.</span>
+                    </div>
+
+                    <div class="bascket__form--box">
+                        <b class="bascket__form--name">Итого</b>
+                        <span class="bascket__form--sale">1999р.</span>
+                    </div>
+                    <a class="bascket__form--buttons bascket__form--buttons__checkout" href="form.html">Оформить
+                        заказ</a>
+                    <a class="bascket__form--buttons bascket__form--buttons__next" href="#">Продолжить покупки</a>
+                </div>
+            </div>
             <section class="forms">
                 <h3 class="form__title title">Хотите, мы ответим на ваши вопросы?</h3>
                 <div class="form__text text">Тогда просто сообщите ваше имя и номер телефона. Перезвоним в течение 5

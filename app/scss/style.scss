@@ -1396,7 +1396,7 @@
 
 .bascket__form {
     width: 320px;
-
+    height: 340px;
     padding: 20px;
     background-color: #f8f8f8;
     border: 1px solid #ccc;
@@ -1410,7 +1410,7 @@
         -moz-box-shadow: 0px 2px 10px 0px rgba(33, 33, 33, 0.2);
         box-shadow: 0px 2px 10px 0px rgba(33, 33, 33, 0.2);
         z-index: 3;
-        transition: all 0.3s;
+
     }
 }
 
@@ -1483,6 +1483,129 @@
 }
 
 // end bascket block
+.checkout__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout__items {}
+
+.checkout__item {
+    background-color: #f8f8f8;
+    margin-bottom: 20px;
+    height: 250px;
+    width: 865px;
+    border: 1px solid #ccc;
+    transition: all 0.3s;
+
+
+    &:hover,
+    &:focus {
+        border-color: #F5BFBA;
+        -webkit-box-shadow: 0px 2px 10px 0px rgba(33, 33, 33, 0.2);
+        -moz-box-shadow: 0px 2px 10px 0px rgba(33, 33, 33, 0.2);
+        box-shadow: 0px 2px 10px 0px rgba(33, 33, 33, 0.2);
+        z-index: 3;
+
+    }
+
+}
+
+.checkout__item--title__wrapper {
+    border-bottom: 1px solid #ccc;
+}
+
+.checkout__item--title {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.checkout__item {}
+
+.checkout__item--title {}
+
+.checkout__item--inner {
+    padding: 10px;
+}
+
+.checkout__item--wrapper {
+    display: flex;
+
+
+}
+
+.checkout__item--box {
+    font-size: 18px;
+    margin-bottom: 20px;
+
+    &:last-child {
+        margin-left: 20px;
+    }
+
+
+}
+
+.checkout__item--text {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.checkout__item--input {
+    width: 410px;
+    height: 30px;
+    padding: 0 10px;
+}
+
+.checkout__item--sale {
+
+    background-color: #D9EDF7;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.checkout__item--sale__title {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.checkout__item--sale__text {
+    font-size: 14px;
+    color: rgb(28, 175, 35);
+    margin-right: 10px;
+}
+
+.checkout__item--sale__input {}
+
+.checkout__item--buttons__radio {
+    display: flex;
+    justify-content: space-around;
+}
+
+.checkout__item--buttons__radio--box {
+    display: flex;
+}
+
+.checkout__item--buttons__radio--btn {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: block;
+    margin-right: 10px;
+
+}
+
+.checkout__item--buttons__radio--text {
+    font-size: 16px;
+
+}
+
+// end checkout block
 
 
 @import "media";
