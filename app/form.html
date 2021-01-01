@@ -258,9 +258,11 @@
                                 </select>
                             </div>
                             <b class="checkout__item--dalivery__title">Адрес доставки</b>
-                            <input id="address-j" name="address" type="text" value="" class="form-control" max="255">
+                            <input id="address-j" name="address" type="text" value=""
+                                class="checkout__item--dalivery__form-control" max="255">
                             <b class="checkout__item--dalivery__title">Дополнительная информация</b>
-                            <input id="address-j" name="address" type="text" value="" class="form-control" max="255">
+                            <textarea id="comment" name="comment" type="text"
+                                class="checkout__item--dalivery__form-control" max="255"></textarea>
                         </div>
                     </div>
                     <div class="checkout__item">
@@ -268,7 +270,23 @@
 
                             <h6 class="checkout__item--title">Оплата</h6>
                         </div>
-                        <div class="checkout__item--inner"></div>
+                        <div class="checkout__item--inner">
+                            <div class="checkout__item--bottom--radio__wrapper"><input type="radio"
+                                    class="checkout__item--bottom--radio__input" />
+                                <span class="checkout__item--bottom--radio__text">Наличные</span>
+                            </div>
+                            <div class="checkout__item--bottom--radio__wrapper"><input type="radio"
+                                    class="checkout__item--bottom--radio__input" />
+                                <span class="checkout__item--bottom--radio__text">Онлайн-оплата</span>
+                            </div>
+                            <div class="checkout__item--bottom--radio__wrapper"><input type="radio"
+                                    class="checkout__item--bottom--radio__input" />
+                                <span class="checkout__item--bottom--radio__text">Расчетный счет</span>
+                            </div>
+
+
+
+                        </div>
                     </div>
                 </div>
                 <div class="bascket__form">
