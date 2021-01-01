@@ -1493,7 +1493,7 @@
 .checkout__item {
     background-color: #f8f8f8;
     margin-bottom: 20px;
-    height: 250px;
+    // height: 250px;
     width: 865px;
     border: 1px solid #ccc;
     transition: all 0.3s;
@@ -1604,6 +1604,59 @@
     font-size: 16px;
 
 }
+
+
+.checkout__item--dalivery--radio {
+    display: flex;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.checkout__item--dalivery--radio__wrapper~.checkout__item--dalivery--radio__wrapper {
+    margin-left: 20px;
+
+}
+
+.checkout__item--dalivery--radio__input {}
+
+.checkout__item--dalivery--radio__text {}
+
+.checkout__item--dalivery--radio__subtext {
+    font-size: 14px;
+}
+
+.checkout__item--dalivery__title {
+    margin-bottom: 10px;
+    font-size: 16px;
+    display: block;
+}
+
+.checkout__item--dalivery__aside {
+    margin-bottom: 20px;
+}
+
+.checkout__item--dalivery__aside--input {
+    background-color: #fff;
+    border-color: #ccc;
+    padding: 0px 20px;
+    font-size: 16px;
+
+    line-height: 30px;
+    width: 250px;
+    outline: none;
+    margin-right: 25px;
+}
+
+.checkout__item--dalivery__aside--select {
+    background-color: #fff;
+    border-color: #ccc;
+    padding: 0px 20px;
+    font-size: 16px;
+    line-height: 30px;
+    width: 250px;
+    outline: none;
+}
+
 
 // end checkout block
 
