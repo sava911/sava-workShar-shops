@@ -339,6 +339,7 @@
 
 //end header button
 
+
 .main__inner {
     display: flex;
     justify-content: space-between;
@@ -380,7 +381,7 @@
     width: 200px;
 
     margin-top: 14px;
-
+    margin-bottom: 20px;
     font-size: 14px;
     font-weight: 500;
 }
@@ -443,16 +444,18 @@
 
     &__items {
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
         flex-wrap: wrap;
     }
 
     &__item {
         background-color: #fff;
-        margin: 2px 0;
+        margin: 2px 2px;
         text-align: center;
         padding: 10px;
         transition: all 0.3s;
+        width: 190px;
+        height: 220px;
 
         &:hover,
         &:focus {
@@ -1673,6 +1676,11 @@
 .checkout__item--bottom--radio__text {}
 
 // end checkout block
+.product__title {
+    font-size: 36px;
+}
+
+// end product block
 
 
 @import "media";
