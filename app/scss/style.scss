@@ -484,6 +484,7 @@
 }
 
 // end products block
+// end products block
 .features,
 .content,
 .contact,
@@ -1680,7 +1681,32 @@
     font-size: 36px;
 }
 
-// end product block
+// end catalogs block
+.breadcrumbs {
+    margin-bottom: 10px;
+}
+
+.breadcrumbs__list {}
+
+.breadcrumbs__list--item {
+    display: inline-block;
+
+
+
+    font-size: 15px;
+    line-height: 18px;
+
+
+    color: #03a9f4;
+
+    &:last-child {
+        color: #C4C4C4;
+    }
+
+
+}
+
+// end breadcrumbs block
 
 
 @import "media";
