@@ -24,14 +24,15 @@
 
 }
 
-.time {
+.maps {
     padding-left: 20px;
     position: relative;
     margin-top: 20px;
 
     &::after {
         font-family: 'icomoon' !important;
-        content: "\e952";
+
+        content: "\e947";
         position: absolute;
         top: 0;
         left: 0;
@@ -39,13 +40,13 @@
     }
 }
 
-.maps {
+.time {
     padding-left: 20px;
     position: relative;
 
     &::after {
         font-family: 'icomoon' !important;
-        content: "\e947";
+        content: "\e952";
         position: absolute;
         top: 0;
         left: 0;
@@ -187,8 +188,9 @@
     position: relative;
     color: #DA1D23;
 
-    border-radius: 4px;
-    transition: all 0.3s;
+    border-radius: 2px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 
 
 
@@ -593,7 +595,7 @@
     color: #fff;
 
     &__bottom {
-        padding: 46px 0 22px;
+        padding: 20px 0 22px;
 
 
     }
