@@ -9,6 +9,7 @@
 
     &__btn {
         padding: 0 15px;
+        margin-bottom: 5px;
     }
 
     &__top {
@@ -27,7 +28,7 @@
 .maps {
     padding-left: 20px;
     position: relative;
-    margin-top: 20px;
+
 
     &::after {
         font-family: 'icomoon' !important;
@@ -38,6 +39,10 @@
         left: 0;
 
     }
+}
+
+.footer__maps {
+    margin-top: 20px;
 }
 
 .time {
@@ -266,6 +271,7 @@
     cursor: pointer;
     color: #fff;
     background-color: #03f473;
+    transition: all 0.3s;
 
 
     &::after {
