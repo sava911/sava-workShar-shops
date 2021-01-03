@@ -101,16 +101,10 @@ li.slick-active button {
   border: 1px solid #ccc;
   background-color: #fff;
 
-  border-radius: 4px;
-  transition: all 0.3s;
+  border-radius: 2px;
+  margin-bottom: 5px;
 
 
 
-  &:hover,
-  &:focus {
-    transition: all 0.3s;
-    color: #fff;
-    background-color: #03a9f4;
 
-  }
 }

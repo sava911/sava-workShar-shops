@@ -185,28 +185,22 @@
     width: 50px;
     height: 50px;
     position: relative;
-
+    color: #DA1D23;
 
     border-radius: 4px;
     transition: all 0.3s;
 
 
 
-    &:hover,
-    &:focus {
-        transition: all 0.3s;
-        color: #fff;
-        background-color: #03a9f4;
 
-    }
 
     &::after {
         font-family: 'icomoon' !important;
         content: "\e93a";
         position: absolute;
-        top: 15px;
-        left: 12px;
-        font-size: 22px;
+        top: 12px;
+        left: 10px;
+        font-size: 27px;
 
     }
 }
