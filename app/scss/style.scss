@@ -339,7 +339,6 @@
 
 //end header button
 
-
 .main__inner {
     display: flex;
     justify-content: space-between;
@@ -348,6 +347,7 @@
 .banner {
     &-section__inner {
         margin-bottom: 10px;
+
     }
 
 
@@ -1836,6 +1836,125 @@
 
 
 }
+
+// end reviews block
+
+.catalog {
+    &__items {
+        display: flex;
+
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+    &__item {
+        width: 240px;
+        background-color: #fff;
+        margin: 2px 2px;
+
+        padding: 5px;
+        min-height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__item--title {
+        color: #000;
+        font-size: 14px;
+        padding-top: 15px;
+        margin-bottom: 30px;
+        font-weight: 500;
+
+    }
+
+    &__price {
+        font-weight: 500;
+        font-size: 18px;
+        margin-bottom: 10px;
+
+
+
+    }
+
+
+
+    &__btn--box {
+        margin-bottom: 15px;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__btn--inner {
+        /*   background-color: #ccc;
+        display: block;
+        margin-top: 1px; */
+        display: flex;
+
+    }
+
+    &__btn--quantity {
+        border: 1px solid #03a9f4;
+        width: 30px;
+        height: 30px;
+        display: block;
+        border-radius: 2px;
+
+    }
+
+    &__btn--result {
+        width: 50px;
+        border: none;
+
+        border-bottom: 1px solid #03a9f4;
+        border-top: 1px solid #03a9f4;
+        height: 30px;
+        text-align: center;
+        display: block;
+
+    }
+
+    &__btn--bascket {
+        display: block;
+        background-color: #DA1D23;
+        width: 110px;
+        color: #fff;
+
+        padding: 0 10px;
+        border-radius: 2px;
+
+
+    }
+
+    &__link--btn {
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #03a9f4;
+        color: #03a9f4;
+        font-weight: 500;
+        border-radius: 2px;
+    }
+}
+
+
+
+.catalog__btn--quantity {}
+
+.catalog__btn--quantity__minus {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.catalog__btn--result {}
+
+.catalog__btn--quantity__plus {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+
 
 // end reviews block
 
