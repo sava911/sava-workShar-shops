@@ -30,6 +30,7 @@
     position: relative;
 
 
+
     &::after {
         font-family: 'icomoon' !important;
 
@@ -43,6 +44,7 @@
 
 .footer__maps {
     margin-top: 20px;
+
 }
 
 .time {
@@ -101,10 +103,13 @@
 
 
 .sprite-car {
-    background-image: url(../images/sprite.png);
-    background-position: -181px -296px;
-    width: 51px;
-    height: 32px;
+    // background-image: url(../images/sprite.png);
+    // background-position: -181px -296px;
+    background-image: url(../images/content/head-aicon-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 58px;
+    height: 36px;
 }
 
 .header__info--text {
@@ -112,17 +117,19 @@
 }
 
 .sprite-users {
-    background-image: url(../images/sprite.png);
-    background-position: 0 -376px;
-    width: 35px;
-    height: 34px;
+    background-image: url(../images/content/head-aicon-3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 58px;
+    height: 36px;
 }
 
 .sprite-like {
-    background-image: url(../images/sprite.png);
-    background-position: -65px -376px;
-    width: 34px;
-    height: 34px;
+    background-image: url(../images/content/head-aicon-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 58px;
+    height: 36px;
 }
 
 .phone {
@@ -214,6 +221,7 @@
 
 .bascket__resault {
     padding: 10px;
+    cursor: pointer;
 }
 
 
@@ -339,45 +347,13 @@
     }
 }
 
+
 //end header button
 
 .main__inner {
     display: flex;
     justify-content: space-between;
 }
-
-.banner {
-    &-section__inner {
-        margin-bottom: 10px;
-
-    }
-
-
-
-    &-arrow {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: transparent;
-        border: none;
-        margin: 0;
-        padding: 0;
-        z-index: 5;
-        cursor: pointer;
-    }
-
-    &-arrow__nex {
-        right: 20px;
-
-    }
-
-    &-arrow__prev {
-        left: 20px;
-    }
-
-
-}
-
 
 .left {
     width: 200px;
@@ -386,6 +362,7 @@
     margin-bottom: 20px;
     font-size: 14px;
     font-weight: 500;
+
 }
 
 
@@ -429,16 +406,86 @@
 }
 
 
+
+.nav__hover {
+    display: none;
+    padding: 5px;
+    background-color: #fff;
+    position: absolute;
+    left: 199px;
+    top: 0;
+    z-index: 6;
+    width: 310px;
+}
+
+.nav__list:hover {
+    .nav__hover {
+        display: block;
+    }
+}
+
+
+
+.nav__hover--list {
+    padding: 10px;
+
+    &:hover,
+    :focus {
+        color: #F44336;
+    }
+}
+
+.nav__hover--link {}
+
+// end left banner
+
+
+
 .right {
     width: 1000px;
     padding-left: 20px;
 }
 
+.banner {
+    &-section__inner {
+        margin-bottom: 10px;
+
+    }
 
 
 
+    &-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: transparent;
+        border: none;
+        margin: 0;
+        padding: 0;
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    &-arrow__nex {
+        right: 20px;
+
+    }
+
+    &-arrow__prev {
+        left: 20px;
+    }
+
+
+}
 
 // end slider banner
+
+
+
+
+
+
+
 
 .products {
     padding-top: 10px;
@@ -1254,9 +1301,24 @@
 .sale__item--text {}
 
 .sale__footnote {
-    background-color: #F8F8F8;
     padding: 10px;
     margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    transition: all 0.3s;
+
+
+    &:hover,
+    &:focus {
+        border-color: #F5BFBA;
+        -webkit-box-shadow: 0px 2px 10px 0px rgba(33, 33, 33, 0.2);
+        -moz-box-shadow: 0px 2px 10px 0px rgba(33, 33, 33, 0.2);
+        box-shadow: 0px 2px 10px 0px rgba(33, 33, 33, 0.2);
+        z-index: 3;
+        transition: all 0.3s;
+    }
+
+
 }
 
 
@@ -2008,6 +2070,7 @@
 .product__info {
     width: 240px;
     padding: 10px;
+    border: 1px solid #03a9f4;
 }
 
 .product__info--title {
@@ -2026,6 +2089,7 @@
     margin-bottom: 10px;
     position: relative;
 
+
     &:nth-child(1) {
         &::after {
             font-family: 'icomoon' !important;
@@ -2033,6 +2097,7 @@
             position: absolute;
             top: 10px;
             left: 0;
+            color: #03a9f4;
 
 
         }
@@ -2045,6 +2110,7 @@
             position: absolute;
             top: 10px;
             left: 0;
+            color: #03a9f4;
 
 
         }
@@ -2057,7 +2123,31 @@
             position: absolute;
             top: 10px;
             left: 0;
+            color: #03a9f4;
 
+        }
+    }
+
+    &:nth-child(4) {
+        &::after {
+            font-family: 'icomoon' !important;
+            content: "\e947";
+            position: absolute;
+            top: 10px;
+            left: 0;
+            color: #03a9f4;
+
+        }
+    }
+
+    &:nth-child(5) {
+        &::after {
+            font-family: 'icomoon' !important;
+            content: "\e947";
+            position: absolute;
+            top: 10px;
+            left: 0;
+            color: #03a9f4;
 
         }
     }
@@ -2206,6 +2296,8 @@
 }
 
 .yandex__dengi--img {}
+
+
 
 
 // end product block

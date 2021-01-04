@@ -1,5 +1,7 @@
 $(function () {
 
+
+
     $(".banner-section__slider").slick({
         dots: true,
         slidesToScroll: 1,
@@ -23,4 +25,25 @@ $(function () {
         $($(this).attr("href")).addClass("tabs-contant--active");
     });
 
+
+
+
 });
+
+
+
+/* $(".nav__list").hover(
+    function () {
+        $(this).append($(".nav__hover"));
+    }, function () {
+        $(this).find("").last().remove();
+    }
+); */
+
+
+/*
+    $(".nav__list.active").hover(function () {
+        $('.nav__hover').show();
+    }, function () {
+        $('.nav__hover').hide();
+    }); */
