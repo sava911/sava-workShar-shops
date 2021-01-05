@@ -219,12 +219,15 @@
 
 
 
+
     .header__btn {
 
-        padding: 10px;
+        display: none;
 
 
     }
+
+
 
     .menu {
         background-color: #F6F5F3;
@@ -341,7 +344,6 @@
 
     }
 
-    .footer__top-inner {}
 
     .footer__top {
         padding-top: 20px;
@@ -392,11 +394,36 @@
         display: none;
     }
 
+    .header__top {
+
+        line-height: 5px;
+    }
+
+    .navigation__whatsapp--min {
+        display: block;
+        width: 135px;
+        padding-left: 40px;
+
+        &::after {
+            font-size: 23px;
+        }
+
+    }
+
+    .navigation__whatsapp {
+        display: none;
+    }
+
+    .navigation__searh {
+        margin: 0;
+    }
 }
+
 
 @media (max-width: 550px) {
     .logo-min {
         width: 80%;
+        padding-top: 7px;
     }
 
     .form__content-form {

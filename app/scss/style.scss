@@ -187,10 +187,9 @@
 }
 
 
-
 .header__bascket {
     border: 1px solid #ccc;
-    width: 145px;
+
     height: 50px;
     display: flex;
     color: #03a9f4;
@@ -276,7 +275,8 @@
 
 
 
-.navigation__whatsapp {
+.navigation__whatsapp,
+.navigation__whatsapp--min {
     font-size: 18px;
     line-height: 41px;
     padding-left: 53px;
@@ -309,6 +309,9 @@
     }
 }
 
+.navigation__whatsapp--min {
+    display: none;
+}
 
 .searc__content-form {
     display: flex;
