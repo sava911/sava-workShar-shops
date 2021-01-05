@@ -1,5 +1,10 @@
 $(function () {
-
+    $(".header__menu-button ").on("click", function () {
+        $(".menu").addClass("active");
+    });
+    $(".close_button ").on("click", function () {
+        $(".menu").removeClass("active");
+    });
 
 
     $(".banner-section__slider").slick({

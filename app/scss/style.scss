@@ -25,6 +25,10 @@
 
 }
 
+.header__logo-min {
+    display: none;
+}
+
 .maps {
     padding-left: 20px;
     position: relative;
@@ -245,11 +249,12 @@
 .navigation__menu--btn {
     background-color: #DA1D23;
     padding: 0 25px;
-    width: 200px;
+    width: 239px;
     text-align: left;
     color: #fff;
     text-transform: uppercase;
     position: relative;
+    text-align: center;
 
     &::after {
         font-family: 'icomoon' !important;
@@ -265,6 +270,8 @@
 
 .navigation__searh {
     border: 1px solid #ccc;
+    width: 100%;
+    margin: 0 20px;
 }
 
 
@@ -305,6 +312,7 @@
 
 .searc__content-form {
     display: flex;
+    flex-grow: 2;
 }
 
 
@@ -317,7 +325,7 @@
     border: none;
     font-size: 16px;
     line-height: 30px;
-    width: 770px;
+    width: 100%;
     outline: none;
 
     &::placeholder {
@@ -353,6 +361,7 @@
 .main__inner {
     display: flex;
     justify-content: space-between;
+    // flex-direction: row;
 }
 
 .left {
@@ -364,6 +373,13 @@
     font-weight: 500;
 
 }
+
+.right {
+    width: 85%;
+    // flex-grow: 1;
+    padding-left: 20px;
+}
+
 
 
 .nav__list {
@@ -441,10 +457,6 @@
 
 
 
-.right {
-    width: 1000px;
-    padding-left: 20px;
-}
 
 .banner {
     &-section__inner {
@@ -503,7 +515,7 @@
         text-align: center;
         padding: 10px;
         transition: all 0.3s;
-        width: 190px;
+        width: 196px;
         height: 220px;
 
         &:hover,
@@ -705,8 +717,9 @@
 
 
 
-    &__top-item {
-        width: 250px;
+    &__top-item~&__top-item {
+        flex-basis: 250px;
+        margin-left: 10px;
     }
 
     &-list {
@@ -1062,6 +1075,10 @@
 
 .company__banner {
     background-image: url(../images/content/company-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
 }
 
 
@@ -1094,7 +1111,7 @@
 
 
 .company__banner--item__inner {
-    width: 190px;
+    max-width: 190px;
 }
 
 .company__banner--item__title {
@@ -1235,6 +1252,9 @@
 .sale__banner {
     background-image: url('../images/content/sale-banner.jpg');
     padding: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .sale__banner--title {
@@ -1251,12 +1271,13 @@
 
 .sale__items {
     display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
+    // flex-wrap: wrap;
+    margin-bottom: 10px;
 }
 
 .sale__item {
-    width: 595px;
+    flex-basis: 595px;
+    // width: 595px;
     color: #000;
     padding: 20px;
     background-color: #fff;
@@ -1760,6 +1781,7 @@
 // end catalogs block
 .breadcrumbs {
     margin-bottom: 10px;
+    padding-top: 10px;
 }
 
 .breadcrumbs__list {}
@@ -1783,10 +1805,7 @@
 }
 
 // end breadcrumbs block
-.reviews__star--rating__result {
-    width: 100px;
-
-}
+.reviews__star--rating__result {}
 
 .reviews__star--rating__result span {
     padding: 0;
@@ -2296,6 +2315,18 @@
 }
 
 .yandex__dengi--img {}
+
+
+
+
+// end product block
+.header__menu-button__wrapper {
+    display: none;
+}
+
+.header__menu-button {}
+
+.header__menu-button::after {}
 
 
 
