@@ -507,9 +507,11 @@
         display: flex;
         // justify-content: space-between;
         flex-wrap: wrap;
+
     }
 
     &__item {
+        flex-grow: 1;
         background-color: #fff;
         margin: 2px 2px;
         text-align: center;
