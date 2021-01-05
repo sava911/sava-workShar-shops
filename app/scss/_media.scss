@@ -341,9 +341,7 @@
 
     }
 
-    .footer__top-inner {
-        display: inline-block;
-    }
+    .footer__top-inner {}
 
     .footer__top {
         padding-top: 20px;
@@ -388,6 +386,12 @@
 
         margin-bottom: 0px;
     }
+
+    .footer__top-item__nav,
+    .footer__top-newslatter.footer__top-item {
+        display: none;
+    }
+
 }
 
 @media (max-width: 550px) {
@@ -421,6 +425,22 @@
 
     .company__block--text {
         font-size: 20px;
+    }
+
+    .footer__top-inner {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer__number {
+        font-size: 22px;
+    }
+
+    .footer__mail {
+        display: block;
+        text-decoration: underline;
+        margin-bottom: 10px;
     }
 }
 
