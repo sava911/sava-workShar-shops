@@ -55,6 +55,7 @@
     padding-left: 20px;
     position: relative;
 
+
     &::after {
         font-family: 'icomoon' !important;
         content: "\e952";
@@ -105,6 +106,31 @@
 
 }
 
+.icon-users {
+    background-image: url(../images/content/icon-users.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 58px;
+    height: 46px;
+}
+
+.icon-car {
+    background-image: url(../images/content/icon-car.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 58px;
+    height: 46px;
+}
+
+.icon-like {
+    background-image: url(../images/content/icon-like.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 68px;
+    height: 46px;
+
+}
+
 
 .sprite-car {
     // background-image: url(../images/sprite.png);
@@ -116,9 +142,13 @@
     height: 36px;
 }
 
+
+
 .header__info--text {
     padding-left: 5px;
 }
+
+
 
 .sprite-users {
     background-image: url(../images/content/head-aicon-3.png);
@@ -189,7 +219,7 @@
 
 .header__bascket {
     border: 1px solid #ccc;
-
+    min-width: 143px;
     height: 50px;
     display: flex;
     color: #03a9f4;
@@ -248,12 +278,13 @@
 .navigation__menu--btn {
     background-color: #DA1D23;
     padding: 0 25px;
-    width: 239px;
-    text-align: left;
+    width: 274px;
+
     color: #fff;
     text-transform: uppercase;
     position: relative;
-    text-align: center;
+    text-align: left;
+    font-weight: 700;
 
     &::after {
         font-family: 'icomoon' !important;
@@ -261,6 +292,7 @@
         position: absolute;
         top: 9px;
         right: 12px;
+        font-weight: 400;
 
         font-size: 20px;
 
@@ -294,8 +326,8 @@
         content: "\ea93";
         position: absolute;
         top: 0;
-        left: 9px;
-        font-size: 26px;
+        left: 16px;
+        font-size: 25px;
 
     }
 
@@ -368,6 +400,7 @@
 }
 
 .left {
+    // max-width: 274px;
     width: 200px;
 
     margin-top: 14px;
@@ -378,7 +411,7 @@
 }
 
 .right {
-    width: 85%;
+    width: 83%;
     // flex-grow: 1;
     padding-left: 20px;
 }
@@ -386,7 +419,7 @@
 
 
 .nav__list {
-    padding: 10px 20px;
+
     position: relative;
     cursor: pointer;
     border: 1px solid #ccc;
@@ -454,6 +487,17 @@
     }
 }
 
+
+.nav__link {
+    padding: 10px;
+    display: block;
+
+    &:hover,
+    :focus {
+        color: #F44336;
+    }
+}
+
 .nav__hover--link {}
 
 // end left banner
@@ -508,20 +552,28 @@
 
     &__items {
         display: flex;
-        // justify-content: space-between;
+        // justify-content: center;
         flex-wrap: wrap;
+
+        &:last-child {
+            // flex-grow: 0;
+            // flex-basis: 50%;
+            // background-color: red;
+            // justify-content: start;
+
+        }
 
 
     }
 
     &__item {
-        flex-grow: 1;
+        // flex-grow: 1;
         background-color: #fff;
-        margin: 2px 2px;
+        margin: 1px 2px;
         text-align: center;
         padding: 10px;
         transition: all 0.3s;
-        flex-basis: 195px;
+        flex-basis: 190px;
 
         &:last-child {
             // flex-grow: 0;
@@ -545,7 +597,7 @@
     &__title {
         text-align: center;
         margin-bottom: 20px;
-        font-size: 36px;
+        font-size: 28px;
     }
 
     &__item--title {
@@ -655,7 +707,7 @@
 .form__btn {
     background-color: #DA1D23;
     padding: 0 25px;
-    width: 400px;
+    width: 460px;
     text-align: center;
     color: #fff;
     font-size: 16px;
@@ -671,6 +723,7 @@
 .footer {
     background: #28302E;
     color: #fff;
+
 
     &__bottom {
         padding: 20px 0 22px;
@@ -709,7 +762,7 @@
 
     &__top-title {
         font-weight: 700;
-
+        margin-bottom: 7px;
         font-size: 14px;
         line-height: 16px;
         color: #faa72b;
@@ -752,6 +805,14 @@
     }
 
 
+}
+
+.footer__top--img__yandex {
+    cursor: pointer;
+}
+
+.footer__top--losts {
+    margin-bottom: 20px;
 }
 
 .footer__top--list {
@@ -845,7 +906,7 @@
 .title-page {
     font-weight: 500;
     margin-bottom: 20px;
-    font-size: 36px;
+    font-size: 28px;
 }
 
 
@@ -865,12 +926,12 @@
 
         content: '';
         position: absolute;
-        background-image: url(../images/sprite.png);
-        background-position: -129px -376px;
-        width: 34px;
-        height: 34px;
+        background-image: url(../images/content/contacttell.png);
+        background-size: cover;
+        width: 40px;
+        height: 40px;
         top: 30px;
-        left: 25px;
+        left: 18px;
 
     }
 }
@@ -884,12 +945,12 @@
 
         content: '';
         position: absolute;
-        background-image: url(../images/sprite.png);
-        background-position: -338px -296px;
-        width: 35px;
-        height: 26px;
-        top: 35px;
-        left: 25px;
+        background-image: url(../images/content/contact-email.png);
+        background-size: cover;
+        width: 50px;
+        height: 50px;
+        top: 30px;
+        left: 12px;
 
     }
 
@@ -933,11 +994,11 @@
 
         content: '';
         position: absolute;
-        background-image: url(../images/sprite.png);
-        background-position: -192px -376px;
-        width: 34px;
-        height: 34px;
-        top: 20px;
+        background-image: url(../images/content/contact-maps.png);
+        background-size: cover;
+        width: 50px;
+        height: 50px;
+        top: 13px;
         left: 25px;
 
     }
@@ -964,8 +1025,9 @@
 
         content: '';
         position: absolute;
-        background-image: url(../images/sprite.png);
-        background-position: -181px -296px;
+        background-image: url(../images/aicon-delivery-car.png);
+        background-repeat: no-repeat;
+        // background-position: -181px -296px;
         width: 51px;
         height: 32px;
         top: 10px;
@@ -1009,7 +1071,7 @@
 .delivery__item--user {
     .delivery__item--title {
         border-bottom: 1px solid #ccc;
-        padding: 25px 20px 25px 100px;
+        padding: 20px 20px 20px 100px;
     }
 
     .delivery__item--list {
@@ -1020,10 +1082,12 @@
 
         content: '';
         position: absolute;
-        background-image: url(../images/sprite.png);
-        background-position: -417px -163px;
+        background-image: url(../images/aicon-delivery-boxs.png);
+        background-repeat: no-repeat;
+        // background-position: -417px -163px;
+        background-position: center;
         width: 35px;
-        height: 58px;
+        height: 40px;
         top: 10px;
         left: 20px;
 
@@ -1052,9 +1116,10 @@
 
         content: '';
         position: absolute;
-        background-image: url(../images/sprite.png);
-        background-position: -495px -252px;
-        width: 29px;
+        background-image: url(../images/aicon-delivery-bascet.png);
+        background-repeat: no-repeat;
+        // background-position: -495px -252px;
+        width: 50px;
         height: 35px;
         top: 10px;
         left: 20px;
@@ -1074,6 +1139,7 @@
     height: 408px;
     margin-bottom: 20px;
     transition: all 0.3s;
+    background-size: cover;
 
 
     &:hover,
@@ -1120,7 +1186,7 @@
 
 .company__banner--img {
     margin-right: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 
@@ -1267,7 +1333,7 @@
     background-image: url('../images/content/sale-banner.jpg');
     padding: 30px;
     background-repeat: no-repeat;
-    background-size: cover;
+
     background-position: center;
 }
 
@@ -1281,16 +1347,25 @@
     max-width: 500px;
 }
 
-.sale__info {}
+.sale__info {
+    .sale__items {
+
+        margin-bottom: 10px;
+
+
+    }
+}
 
 .sale__items {
     display: flex;
+    // margin-bottom: 10px;
     // flex-wrap: wrap;
 
 }
 
 .sale__item {
     flex-basis: 595px;
+
     // width: 595px;
     color: #000;
     padding: 20px;
@@ -1426,25 +1501,30 @@
 
 .bascket__item--buttons {
     display: flex;
+    margin-top: 5px;
 
 }
 
 .bascket__item--buttons__box {
     margin-right: 25px;
     display: flex;
-    height: 25px;
+    height: 35px;
+
 }
 
 .bascket__item--buttons__btn {
-    border: 1px solid #333;
-    width: 15px;
+    border: 1px solid #000;
+    width: 27px;
     display: block;
 
 }
 
 .bascket__item--buttons__input {
-    width: 100px;
+    width: 66px;
     text-align: center;
+    border: 1px solid #000;
+
+
 }
 
 .buttons__btn--minus {
@@ -1457,11 +1537,13 @@
 
 .bascket__item--buttons__resault {
     margin-right: 25px;
-    padding-top: 5px;
+    padding-top: 10px;
+    font-weight: 500;
 }
 
 .bascket__item--buttons__dalate--close {
     position: absolute;
+
     right: 15px;
     top: -1px;
     width: 10px;
@@ -1494,7 +1576,7 @@
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    margin-top: 3px;
+    margin-top: 8px;
     position: relative;
     opacity: 0.5;
     transition: all 0.3s;
@@ -1578,6 +1660,7 @@
     background-color: rgb(55, 171, 238);
     color: #fff;
     transition: all 0.3s;
+    padding: 10px;
 
     &:hover,
     &:focus {
@@ -1588,6 +1671,7 @@
 }
 
 .bascket__form--buttons__next {
+    padding: 10px;
 
     &:hover,
     &:focus {
@@ -1601,6 +1685,10 @@
 .checkout__inner {
     display: flex;
     justify-content: space-between;
+
+    .bascket__form {
+        height: 224px;
+    }
 }
 
 .checkout__items {}
@@ -2050,6 +2138,12 @@
         color: #03a9f4;
         font-weight: 500;
         border-radius: 2px;
+
+        &:hover,
+        &:focus {
+            color: #fff;
+            background-color: #03a9f4;
+        }
     }
 
 
@@ -2100,18 +2194,34 @@
     }
 }
 
+.catalog__item {
+    transition: all 0.3s;
+
+
+    &:hover,
+    &:focus {
+        border-color: #F5BFBA;
+        -webkit-box-shadow: 0px 2px 10px 0px rgba(33, 33, 33, 0.2);
+        -moz-box-shadow: 0px 2px 10px 0px rgba(33, 33, 33, 0.2);
+        box-shadow: 0px 2px 10px 0px rgba(33, 33, 33, 0.2);
+        z-index: 3;
+
+    }
+}
+
 .product__img {}
 
 .product__info {
     width: 240px;
     padding: 10px;
+    padding-bottom: 0;
     border: 1px solid #03a9f4;
 }
 
 .product__info--title {
     font-weight: 500;
     font-size: 18px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     display: block;
 
 }
@@ -2119,73 +2229,55 @@
 .product__info--lists {}
 
 .product__info--list {
-    font-size: 16px;
+
     padding-left: 25px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     position: relative;
 
-
     &:nth-child(1) {
-        &::after {
-            font-family: 'icomoon' !important;
-            content: "\e93a";
-            position: absolute;
-            top: 10px;
-            left: 0;
-            color: #03a9f4;
+        background-image: url(../images/balloons-product-2.png);
+        background-repeat: no-repeat;
+        background-position: left center;
 
-
-        }
     }
 
     &:nth-child(2) {
-        &::after {
-            font-family: 'icomoon' !important;
-            content: "\e945";
-            position: absolute;
-            top: 10px;
-            left: 0;
-            color: #03a9f4;
+        background-image: url(../images/balloons-product-3.png);
+        background-repeat: no-repeat;
+        background-position: left center;
 
-
-        }
     }
 
     &:nth-child(3) {
-        &::after {
-            font-family: 'icomoon' !important;
-            content: "\e947";
-            position: absolute;
-            top: 10px;
-            left: 0;
-            color: #03a9f4;
+        background-image: url(../images/balloons-product-4.png);
+        background-repeat: no-repeat;
+        background-position: left center;
 
-        }
     }
 
     &:nth-child(4) {
-        &::after {
-            font-family: 'icomoon' !important;
-            content: "\e947";
-            position: absolute;
-            top: 10px;
-            left: 0;
-            color: #03a9f4;
+        background-image: url(../images/balloons-product-5.png);
+        background-repeat: no-repeat;
+        background-position: left center;
 
-        }
     }
 
     &:nth-child(5) {
-        &::after {
-            font-family: 'icomoon' !important;
-            content: "\e947";
-            position: absolute;
-            top: 10px;
-            left: 0;
-            color: #03a9f4;
+        background-image: url(../images/balloons-product-1.png);
+        background-repeat: no-repeat;
+        background-position: left center;
 
-        }
     }
+
+    &:nth-child(6) {
+        background-image: url(../images/balloons-product-6.png);
+        background-repeat: no-repeat;
+        background-position: left center;
+        margin-bottom: 0;
+
+    }
+
+
 
 }
 
@@ -2275,7 +2367,7 @@
 
 }
 
-.product__content--left__item~.product__content--left__item {
+.product__content--left__item {
     border-top: 1px solid #ccc;
     padding-top: 15px;
 }
@@ -2312,8 +2404,7 @@
 .product__content--right__items {}
 
 .product__content--right__item {
-    border-top: 1px solid #ccc;
-    padding-top: 15px;
+    padding-top: 12px;
     display: flex;
     margin-bottom: 15px;
 
