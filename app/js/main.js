@@ -1,9 +1,12 @@
 $(function () {
     $(".header__menu-button ").on("click", function () {
-        $(".menu").addClass("active");
+        $(".modal-menu").addClass("active");
+        $("body").addClass("lock");
     });
-    $(".close_button ").on("click", function () {
-        $(".menu").removeClass("active");
+    $(".modal-menu").on("click", function () {
+        $(".modal-menu").removeClass("active");
+
+
     });
 
 
