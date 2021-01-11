@@ -49,6 +49,8 @@
 
 }
 
+
+
 .header__logo-min {
     display: none;
 }
@@ -333,8 +335,9 @@
 }
 
 .navigation__menu--btn {
+    display: block;
     background-color: #DA1D23;
-    padding: 0 25px;
+    padding: 15px 25px 0;
     width: 274px;
 
     color: #fff;

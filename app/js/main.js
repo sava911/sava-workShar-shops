@@ -10,15 +10,9 @@ $(function () {
 
     });
 
-    /*   $(window).scroll(function (event) {
-          if ($(this).scrollTop() > 150) {
-              $(".menu-scroll").fadeIn();
-              $(".menu-scroll").addClass('fixed')
-          }
-          else {
-              $(".menu-scroll").removeClass('fixed')
-          }
-      }); */
+
+
+
 
 
     $(".banner-section__slider").slick({
