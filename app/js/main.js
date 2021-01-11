@@ -5,9 +5,20 @@ $(function () {
     });
     $(".modal-menu").on("click", function () {
         $(".modal-menu").removeClass("active");
+        $("body").removeClass("lock");
 
 
     });
+
+    /*   $(window).scroll(function (event) {
+          if ($(this).scrollTop() > 150) {
+              $(".menu-scroll").fadeIn();
+              $(".menu-scroll").addClass('fixed')
+          }
+          else {
+              $(".menu-scroll").removeClass('fixed')
+          }
+      }); */
 
 
     $(".banner-section__slider").slick({

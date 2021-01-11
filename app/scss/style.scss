@@ -3,9 +3,33 @@
 @import "slick";
 @import "fonts";
 
-.header {
-    margin-bottom: 20px;
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
 
+    select:focus,
+    textarea:focus,
+    input:focus {
+        font-size: 16px;
+    }
+}
+
+
+
+.header {
+
+    padding-bottom: 154px;
+
+
+
+
+    &__wrapper {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        background-color: #F6F5F3;
+        z-index: 10;
+
+    }
 
     &__btn {
         padding: 0 15px;
@@ -93,16 +117,18 @@
     -webkit-transition-duration: .5s;
     -o-transition-duration: .5s;
     transition-duration: .5s;
-    z-index: 7;
+    z-index: 11;
 
 }
 
 .modal-menu__inner {
-    opacity: none;
+
     background-color: #333;
     width: 230px;
+    height: 100vh;
     padding: 60px 10px 0;
     z-index: 8;
+
 
 
 
@@ -445,6 +471,7 @@
     width: 83%;
     // flex-grow: 1;
     padding-left: 20px;
+    padding-top: 2px;
 }
 
 
@@ -598,9 +625,9 @@
     }
 
     &__item {
-        // flex-grow: 1;
+        flex-grow: 1;
         background-color: #fff;
-        margin: 1px 2px;
+        margin: 1px 1px;
         text-align: center;
         padding: 10px;
         transition: all 0.3s;
@@ -637,6 +664,12 @@
         font-size: 17px;
         font-weight: 500;
 
+    }
+}
+
+.catalogs__products--inner {
+    .products__item {
+        flex-grow: 0;
     }
 }
 
@@ -919,12 +952,38 @@
     }
 }
 
+.link-pinter {
+    &::after {
+        font-family: 'icomoon' !important;
+
+        position: absolute;
+        content: "\ead2";
+        top: 8px;
+        left: 8px;
+
+
+    }
+}
+
 .link-youtube {
     &::after {
         font-family: 'icomoon' !important;
 
         position: absolute;
-        content: "\ea90";
+        content: "\ea9d";
+        top: 8px;
+        left: 8px;
+
+
+    }
+}
+
+.link-telg {
+    &::after {
+        font-family: 'icomoon' !important;
+
+        position: absolute;
+        content: "\ea95";
         top: 8px;
         left: 8px;
 
@@ -2145,6 +2204,7 @@
         width: 50px;
         border: none;
 
+
         border-bottom: 1px solid #03a9f4;
         border-top: 1px solid #03a9f4;
         height: 40px;
@@ -2156,9 +2216,9 @@
     &__btn--bascket {
         display: block;
         background-color: #DA1D23;
-        width: 110px;
+        width: 100%;
         color: #fff;
-
+        margin-left: 5px;
         padding: 0 10px;
         border-radius: 2px;
         font-size: 16px;
@@ -2221,7 +2281,9 @@
 
     .catalog__item {
 
-
+        .catalog__item--title {
+            cursor: default;
+        }
 
         .reviews__top--star {
             display: flex;
@@ -2231,18 +2293,24 @@
     }
 }
 
-.catalog__item {
-    transition: all 0.3s;
+.catalog__item--images__inner {
+    text-align: center;
+}
+
+.catalog__items {
+    .catalog__item {
+        transition: all 0.3s;
 
 
-    &:hover,
-    &:focus {
-        border-color: #F5BFBA;
-        -webkit-box-shadow: 0px 2px 10px 0px rgba(33, 33, 33, 0.2);
-        -moz-box-shadow: 0px 2px 10px 0px rgba(33, 33, 33, 0.2);
-        box-shadow: 0px 2px 10px 0px rgba(33, 33, 33, 0.2);
-        z-index: 3;
+        &:hover,
+        &:focus {
+            border-color: #F5BFBA;
+            -webkit-box-shadow: 0px 2px 10px 0px rgba(33, 33, 33, 0.2);
+            -moz-box-shadow: 0px 2px 10px 0px rgba(33, 33, 33, 0.2);
+            box-shadow: 0px 2px 10px 0px rgba(33, 33, 33, 0.2);
+            z-index: 3;
 
+        }
     }
 }
 
