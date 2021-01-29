@@ -9,6 +9,17 @@ $(function () {
 
 
     });
+    $(".popup-clicket__btn").on("click", function () {
+        $(".popup-click").addClass("active");
+        $("body").addClass("lock");
+    });
+    $(".popup-click").on("click", function () {
+        $(".popup-click").removeClass("active");
+        $("body").removeClass("lock");
+
+
+    });
+
 
 
 

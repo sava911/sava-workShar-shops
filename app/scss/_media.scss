@@ -278,10 +278,7 @@
 }
 
 @media (max-width: 650px) {
-    body.lock {
-        overflow: hidden;
 
-    }
 
     .header__top--wrapper {
 
@@ -431,40 +428,9 @@
         box-shadow: 0 8px 0 0 #353535, 0 16px 0 0 #353535;
     }
 
-    .close_button {
-        width: 47px;
-        height: 30px;
-        position: absolute;
-        left: 20px;
-        top: 20px;
-        cursor: pointer;
 
-    }
 
-    .close_button::after,
-    .close_button::before {
-        content: "";
-        width: 41px;
-        height: 2px;
-        background-color: #fff;
-        -webkit-transform-origin: left;
-        -ms-transform-origin: left;
-        transform-origin: left;
-        position: absolute;
-    }
 
-    .close_button::after {
-        -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        transform: rotate(45deg);
-    }
-
-    .close_button::before {
-        -webkit-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-        transform: rotate(-45deg);
-        bottom: -1px;
-    }
 
     .header__logo-min {
         display: block;
